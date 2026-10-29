@@ -1,0 +1,83 @@
+{
+  "selected_model": "logistic_regression",
+  "selection": [
+    {
+      "model": "logistic_regression",
+      "cv_average_precision": 0.6898634468527992,
+      "validation_average_precision": 0.6245062688326143,
+      "best_parameters": {
+        "model__C": 0.1,
+        "model__class_weight": null
+      }
+    },
+    {
+      "model": "random_forest",
+      "cv_average_precision": 0.664346327794893,
+      "validation_average_precision": 0.5774511716164012,
+      "best_parameters": {
+        "model__max_depth": 8,
+        "model__min_samples_leaf": 4
+      }
+    }
+  ],
+  "test": {
+    "roc_auc": 0.8350809151785714,
+    "average_precision": 0.6698502565308924,
+    "brier_score": 0.1319859075262276,
+    "accuracy": 0.7867540029112081,
+    "balanced_accuracy": 0.7704268973214285,
+    "precision": 0.5620915032679739,
+    "recall": 0.7371428571428571,
+    "f1": 0.6378244746600742,
+    "threshold": 0.263152650036315
+  },
+  "baseline_test": {
+    "roc_auc": 0.5,
+    "average_precision": 0.2547307132459971,
+    "brier_score": 0.18996382463283537,
+    "accuracy": 0.745269286754003,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "threshold": 0.5
+  },
+  "partitions": {
+    "train": {
+      "rows": 6068,
+      "dates": 2235,
+      "start": "2008-07-01",
+      "end": "2014-11-10",
+      "rain_rate": 0.2437376400791035
+    },
+    "validation": {
+      "rows": 1001,
+      "dates": 479,
+      "start": "2014-11-11",
+      "end": "2016-03-03",
+      "rain_rate": 0.1978021978021978
+    },
+    "test": {
+      "rows": 1374,
+      "dates": 479,
+      "start": "2016-03-04",
+      "end": "2017-06-25",
+      "rain_rate": 0.2547307132459971
+    }
+  },
+  "source": "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/_0eYOqji3unP1tDNKWZMjg/weatherAUS-2.csv",
+  "sha256": "573fd715cd69fcacc4df32024d823b450ae3edaae7e8ff2eeb623adbed424014",
+  "stations": [
+    "Melbourne",
+    "MelbourneAirport",
+    "Watsonia"
+  ],
+  "seed": 42,
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "protocol": "Date-ordered 70/15/15 split; training-only expanding-date CV; validation selects model and F1 threshold; no validation refit."
+}

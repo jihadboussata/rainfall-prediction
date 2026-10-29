@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite it and the original data/method sources in the README."
+type: software
+title: "Next-day rainfall prediction with temporal evaluation"
+authors:
+  - family-names: Boussata
+    given-names: Jihad
+version: 1.0.0
+date-released: '2026-10-29'
+license: MIT
